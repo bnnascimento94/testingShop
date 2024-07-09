@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shoppingFragment">
+
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.vullpes.testing.ui.ShoppingFragment"
+        android:label="ShoppingFragment" >
+        <action
+            android:id="@+id/action_shoppingFragment_to_addShoppinItemFragment"
+            app:destination="@id/addShoppinItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addShoppinItemFragment"
+        android:name="com.vullpes.testing.ui.AddShoppinItemFragment"
+        android:label="AddShoppinItemFragment" >
+        <action
+            android:id="@+id/action_addShoppinItemFragment_to_imagePickFragment"
+            app:destination="@id/imagePickFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagePickFragment"
+        android:name="com.vullpes.testing.ui.ImagePickFragment"
+        android:label="ImagePickFragment" />
+</navigation>
